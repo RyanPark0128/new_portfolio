@@ -234,11 +234,11 @@ img {
 .home__profession {
 	font-size: var(--small-font-size);
 	color: var(--first-color-dark);
-	margin-bottom: var(--mb-5);
 }
 
 .home__social {
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
+	margin-top: 2rem;
 }
 
 .home__social-link {
@@ -445,15 +445,22 @@ img {
 .certificate__container {
 	display: flex;
 	justify-content: center;
-	margin-left: 100px;
+	margin: 0px 25px;
 }
 
 .certificate__title {
-	margin-left: 100px;
+	margin-left: 30px;
+	font-size: 0.75rem;
+}
+
+.certificate__title a:hover {
+	transform: scale(1.01);
+	color: var(--first-color);
+	transition: all 0.2s linear;
 }
 
 .certificate__image {
-	width: 100px;
+	width: 75px;
 }
 
 .certificate__wrapper {
@@ -698,5 +705,16 @@ img {
 	section {
 		min-height: 1000px;
 		margin-bottom: 75px;
+	}
+
+	.certificate__title {
+		font-size: 1.25rem;
+		margin-left: 100px;
+		vertical-align: middle;
+	}
+
+	.certificate__image {
+		width: 125px;
+		margin-left: 50px;
 	}
 }

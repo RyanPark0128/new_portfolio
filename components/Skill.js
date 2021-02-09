@@ -45,7 +45,7 @@ const Skill = () => {
       name: "AWS (Lambda, EC2)", percentage: 85, className: '__85'
     },
     {
-      name: "AWS (Cloudfront, Route53, S3)", percentage: 85, className: '__85'
+      name: "AWS (Cloudfront, S3)", percentage: 85, className: '__85'
     },
     {
       name: "Heroku", percentage: 80, className: '__80'

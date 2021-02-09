@@ -1,42 +1,47 @@
 const Certificate = () => {
 
   const items = [{
+    name: "Lighthouse Labs Web Development",
+    src: "./assets/certificate/Lighthouse.pdf",
+    logo: "https://www.lighthouselabs.ca/assets/lighthouselabs-logo-d5df6d383f7466b06a64de9561fd537493502eafe78bbf3bcd3de82884e5dd85.png"
+  }, {
     name: "AWS EC2 Master Class",
-    src: "",
+    src: "./assets/certificate/MasterClass.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "AWS Serverless APIs (Lambda, DynamoDB)",
-    src: "",
+    src: "./assets/certificate/Serverless.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "CSS Animations Transitions and Transform",
-    src: "",
+    src: "./assets/certificate/Animation.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "CSS Complete Guide",
-    src: "",
+    src: "./assets/certificate/Css.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "Modern React & Redux",
-    src: "",
+    src: "./assets/certificate/Modern.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "Senior Developer Roadmap",
-    src: "",
+    src: "./assets/certificate/Senior.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "Typescript",
-    src: "",
+    src: "./assets/certificate/Typescript.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   }, {
     name: "Typescript & React",
-    src: "",
+    src: "./assets/certificate/TypeReact.pdf",
     logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
   },]
+
   const listItems = items.map((item) =>
     <div className="certificate__wrapper">
       <img className="certificate__image" draggable="false" src={item.logo} />
-      <div className="certificate__title"><u>{item.name}</u></div>
+      <div className="certificate__title"><u><a href={item.src}>{item.name}</a></u></div>
     </div>
   )
   return <section class="certificate section" id="certificate">
