@@ -6,6 +6,7 @@ import Education from '../components/Education'
 import Work from '../components/Work'
 import Service from '../components/Service'
 import Footer from '../components/Footer'
+import Certificate from '../components/Certificate'
 import { useEffect } from 'react'
 
 export default function HomePage() {
@@ -49,6 +50,7 @@ export default function HomePage() {
         <About />
         <Skill />
         <Education />
+        <Certificate />
         <Service />
         <Work />
       </div>

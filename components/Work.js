@@ -9,7 +9,7 @@ const Work = () => {
 
         <div class="works__data">
           <div>
-            <a href="https://brave-haibt-0822ec.netlify.app/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="https://brave-haibt-0822ec.netlify.app/" target="_blank" class="works__link"><i class="bx bx-globe"></i></a>
             <a href="https://github.com/RyanPark0128/scheduler" target="_blank" class="works__link"><i class='bx bxl-github'></i></a>
           </div>
           <span class="works__title">React Scheduler</span>
@@ -21,7 +21,7 @@ const Work = () => {
 
         <div class="works__data">
           <div>
-            <a href="https://ryanpark0128.github.io/tetris-react/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="https://ryanpark0128.github.io/tetris-react/" target="_blank" class="works__link"><i class="bx bx-globe"></i></a>
             <a href="https://github.com/RyanPark0128/tetris-react" target="_blank" class="works__link"><i class='bx bxl-github'></i></a>
           </div>
           <span class="works__title">React Tetris</span>
@@ -33,7 +33,7 @@ const Work = () => {
 
         <div class="works__data">
           <div>
-            <a href="https://netflix-clone-9065c.web.app/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="https://netflix-clone-9065c.web.app/" target="_blank" class="works__link"><i class="bx bx-globe"></i></a>
             <a href="https://github.com/RyanPark0128/Netflix_Clone" target="_blank" class="works__link"><i class='bx bxl-github'></i></a>
           </div>
           <span class="works__title">Netflix Clone</span>
@@ -44,7 +44,7 @@ const Work = () => {
 
         <div class="works__data">
           <div>
-            <a href="https://chatapp-8588d.web.app/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="https://chatapp-8588d.web.app/" target="_blank" class="works__link"><i class="bx bx-globe"></i></a>
             <a href="https://github.com/RyanPark0128/chatapp" target="_blank" class="works__link"><i class='bx bxl-github'></i></a>
           </div>
           <span class="works__title">Simply Chat</span>
@@ -55,7 +55,7 @@ const Work = () => {
 
         <div class="works__data">
           <div>
-            <a href="https://ryanpark0128.github.io/Corona_Tracker/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+            <a href="https://ryanpark0128.github.io/Corona_Tracker/" target="_blank" class="works__link"><i class="bx bx-globe"></i></a>
             <a href="https://github.com/RyanPark0128/Corona_Tracker" target="_blank" class="works__link"><i class='bx bxl-github'></i></a>
           </div>
           <span class="works__title">COVID-19 Dashboard</span>
