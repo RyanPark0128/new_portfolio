@@ -153,6 +153,7 @@ img {
 	align-items: center;
 	background-color: var(--first-color);
 	transition: 0.5s;
+	animation: fadeInLeft ease-out 0.75s;
 }
 
 .nav__close {
@@ -173,7 +174,7 @@ img {
 	text-transform: uppercase;
 	color: var(--first-color-lighten);
 	font-weight: var(--font-bold);
-	transition: 0.3s;
+	transition: all 0.3s;
 }
 
 .nav__link:hover {

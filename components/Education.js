@@ -1,37 +1,28 @@
-const Education = () => {
+import { educate } from '../lib/index'
 
-  return <section class="education section" id="education">
-    <span class="section-subtitle">Qualification</span>
-    <h2 class="section-title">My Education</h2>
-    <div class="education__container bd-grid">
-      <div class="education__content">
-        <div>
-          <h3 class="education__year">2016- 2018</h3>
-          <span class="education__university">Douglas College</span>
-        </div>
-        <div class="education__time">
-          <span class="education__rounder"></span>
-          <span class="education__line"></span>
-        </div>
-        <div>
-          <h3 class="education__race">Associate of Science</h3>
-          <span class="education__specialty">Diploma</span>
-        </div>
+const Education = () => {
+  const listEducation = educate.map((item, index) =>
+    <div key={index} className="education__content">
+      <div>
+        <h3 className="education__year">{item.period}</h3>
+        <span className="education__university">{item.institution}</span>
       </div>
-      <div class="education__content">
-        <div>
-          <h3 class="education__year">2019</h3>
-          <span class="education__university">Lighthouse Labs</span>
-        </div>
-        <div class="education__time">
-          <span class="education__rounder"></span>
-          <span class="education__line"></span>
-        </div>
-        <div>
-          <h3 class="education__race">Web Development</h3>
-          <span class="education__specialty">Diploma</span>
-        </div>
+      <div className="education__time">
+        <span className="education__rounder"></span>
+        <span className="education__line"></span>
       </div>
+      <div>
+        <h3 className="education__race">{item.field}</h3>
+        <span className="education__specialty">{item.degree}</span>
+      </div>
+    </div>
+  )
+
+  return <section className="education section" id="education">
+    <span className="section-subtitle">Qualification</span>
+    <h2 className="section-title">My Education</h2>
+    <div className="education__container bd-grid">
+      {listEducation}
     </div>
   </section>
 }

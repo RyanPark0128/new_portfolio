@@ -7,52 +7,38 @@ import Work from '../components/Work'
 import Service from '../components/Service'
 import Footer from '../components/Footer'
 import Certificate from '../components/Certificate'
+import ScrollAnimation from 'react-animate-on-scroll';
+import Scroll from '../lib/scroll'
 import { useEffect } from 'react'
 
 export default function HomePage() {
   useEffect(() => {
-    const navMenu = document.getElementById('nav-menu'),
-      toggleMenu = document.getElementById('nav-toggle'),
-      closeMenu = document.getElementById('nav-close')
-    toggleMenu.addEventListener('click', () => {
-      navMenu.classList.toggle('show')
-    })
-    closeMenu.addEventListener('click', () => {
-      navMenu.classList.remove('show')
-    })
-    const navLink = document.querySelectorAll('.nav__link')
-    function linkAction() {
-      navMenu.classList.remove('show')
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction))
-    const sections = document.querySelectorAll('section[id]')
-    function scrollActive() {
-      const scrollY = window.pageYOffset
-      sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50
-        const sectionId = current.getAttribute('id')
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        } else {
-          document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-        }
-      })
-    }
-    window.addEventListener('scroll', scrollActive)
+    Scroll()
   }, [])
 
   return (
     <div>
       <Header />
-      <div class="l-main">
+      <div className="l-main">
         <Home />
-        <About />
-        <Skill />
-        <Education />
-        <Certificate />
-        <Service />
-        <Work />
+        <ScrollAnimation animateIn="fadeIn">
+          <About />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+          <Skill />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+          <Education />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+          <Certificate />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+          <Service />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+          <Work />
+        </ScrollAnimation>
       </div>
       <Footer />
     </div>
