@@ -3,8 +3,8 @@ import { services } from '../lib/index'
 
 const Service = () => {
 
-  const serviceList = services.map((item) =>
-    <div className="services__content">
+  const serviceList = services.map((item, index) =>
+    <div key={index} className="services__content">
       <i className={item.logo}></i>
       <h3 className="services__title">{item.name}</h3>
     </div>

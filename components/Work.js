@@ -1,7 +1,7 @@
 import { works } from '../lib/index'
 const Work = () => {
-  const workList = works.map((item) =>
-    <div className="works__img">
+  const workList = works.map((item, index) =>
+    <div key={index} className="works__img">
       <img src={item.image_link} alt="" />
       <div className="works__data">
         <div>

@@ -462,6 +462,7 @@ img {
 
 .certificate__image {
 	width: 75px;
+	height: 20px;
 }
 
 .certificate__wrapper {
