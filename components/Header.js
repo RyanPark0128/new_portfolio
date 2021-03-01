@@ -1,5 +1,3 @@
-
-
 const Header = () => {
   return <header className="l-header">
     <nav className="nav bd-grid">
