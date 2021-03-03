@@ -11,8 +11,8 @@ const Home = () => {
         <ScrollAnimation animateIn="fadeIn" delay={1000}>
           <span className="home__profession">Fullstack Developer</span>
           <div className="home__social">
-            <a href="https://linkedin.com/in/ryan-park-552aa9190" target="_blank" className="home__social-link"><i className='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/RyanPark0128" target="_blank" className="home__social-link"><i className='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/ryanpark0128" target="_blank" className="home__social-link"><i className='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/ryanpark0128" target="_blank" className="home__social-link"><i className='bx bxl-github'></i></a>
           </div>
 
           <a href="assets/img/Resume.pdf" className="button home__button">Download Resume</a>
