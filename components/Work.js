@@ -6,7 +6,7 @@ const Work = () => {
       <div className="works__data">
         <div>
           <a href={item.demo_link} target="_blank" className="works__link"><i className="bx bx-globe"></i></a>
-          <a href={item.github_link} target="_blank" className="works__link"><i className='bx bxl-github'></i></a>
+          {!item.github_link ? <div /> : <a href={item.github_link} target="_blank" className="works__link"><i className='bx bxl-github'></i></a>}
         </div>
         <span className="works__title">{item.name}</span>
       </div>

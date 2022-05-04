@@ -40,7 +40,7 @@ export default function HomePage() {
           <Work />
         </ScrollAnimation>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
