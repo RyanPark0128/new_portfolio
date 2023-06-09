@@ -625,7 +625,7 @@ img {
 	}
 
 	.about__img {
-		width: 220px;
+		width: 270px;
 	}
 
 	.about__information {
@@ -690,6 +690,10 @@ img {
 
 	.nav__menu {
 		left: 0;
+	}
+
+	.about__img {
+		width: 350px;
 	}
 
 	.section {

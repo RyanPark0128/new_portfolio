@@ -1,4 +1,4 @@
-import { career, info, intro } from '../lib/index'
+import { career, info } from '../lib/index'
 
 const About = () => {
   const detailInfo = career.map((detail, index) =>
@@ -22,7 +22,7 @@ const About = () => {
     <div className="about__container bd-grid">
       <div className="about__data">
         <img src="assets/img/about.png" alt="" className="about__img" />
-        <p className="about__description"> {intro}</p>
+        {/* <p className="about__description"> {intro}</p> */}
       </div>
       <div>
         <div className="about__information">

@@ -4,7 +4,7 @@ import About from '../components/About'
 import Skill from '../components/Skill'
 import Education from '../components/Education'
 import Work from '../components/Work'
-import Service from '../components/Service'
+// import Service from '../components/Service'
 import Footer from '../components/Footer'
 import Certificate from '../components/Certificate'
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -33,9 +33,9 @@ export default function HomePage() {
         <ScrollAnimation animateIn="fadeIn">
           <Certificate />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+        {/* <ScrollAnimation animateIn="fadeIn">
           <Service />
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeIn">
           <Work />
         </ScrollAnimation>
